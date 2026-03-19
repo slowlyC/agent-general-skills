@@ -4,9 +4,13 @@ description: >
   Matplotlib plotting and diagram style with macaron color palette and colorblind-safe
   alternatives. Use when creating any visual output with matplotlib or Python: charts,
   plots, figures, diagrams, flow charts, architecture diagrams, comparison charts,
-  pipeline illustrations, performance graphs, roofline plots. Trigger on: 画图, 画一个,
-  画个, 可视化, 图表, 流程图, 架构图, 对比图, plot, figure, chart, diagram, draw,
-  visualize, matplotlib, bar chart, line chart, heatmap, scatter, histogram.
+  pipeline illustrations, performance graphs, roofline plots, benchmark results,
+  profiling data visualization. Trigger on: 画图, 画一个, 画个, 可视化, 图表, 流程图,
+  架构图, 对比图, 性能图, 柱状图, 折线图, 热力图, 散点图, plot, figure, chart,
+  diagram, draw, visualize, matplotlib, bar chart, line chart, heatmap, scatter,
+  histogram, pie chart, box plot, violin plot, subplot, savefig.
+  Also use when the user asks to save a figure, choose colors for a chart,
+  or set up matplotlib style for a project.
 ---
 
 # Matplotlib Figure Style

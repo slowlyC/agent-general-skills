@@ -4,10 +4,13 @@ description: |
   去除 AI 写作痕迹的完整参考（24 种模式分类 + 详细示例 + 评分体系）。
   writing-skill 已内置精简版去 AI 检查清单，本 skill 提供逐条展开的深度指导。
   Use when the user mentions: 润色, 改写, 审阅, 修改文本, 改文案, 人性化,
-  去AI, 去除AI痕迹, polish, rewrite, humanize, de-AI, de-slop, proofread,
-  make it natural, remove AI tone.
+  去AI, 去除AI痕迹, AI味太重, 像AI写的, 不自然, polish, rewrite, humanize,
+  de-AI, de-slop, proofread, make it natural, remove AI tone, sounds like AI,
+  too formal, robotic writing.
   Also use when the user provides existing text and asks to improve, edit,
-  revise, or rephrase it.
+  revise, rephrase, or make it sound more human. Use this skill (not writing-skill)
+  when the primary goal is removing AI writing patterns rather than following a
+  specific document format.
 metadata:
   source: 翻译自 blader/humanizer，参考 hardikpandya/stop-slop
 ---

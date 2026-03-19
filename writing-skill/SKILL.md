@@ -6,9 +6,11 @@ description: |
   Use when the user mentions: write README, write docs, write PR, PR description,
   commit message, git commit, changelog, release notes, API documentation, error message,
   CLI help, blog post, technical article, write tutorial, documentation style,
-  writing guide, 写文档, 写README, 写PR, 提交信息, git提交, 更新日志, 发布说明, 技术博客,
-  润色, 改写, rewrite, polish, humanize.
+  writing guide, CONTRIBUTING.md, CHANGELOG.md, docstring, code review comment,
+  写文档, 写README, 写PR, 提交信息, git提交, 更新日志, 发布说明, 技术博客,
+  润色, 改写, 写注释, 错误提示, rewrite, polish, humanize, proofread.
   Also use when generating any developer-facing text that will live in a repository,
+  when writing error messages or CLI output, when reviewing text quality,
   or when rewriting existing text to remove AI-sounding patterns.
   For deep pattern-by-pattern AI text rewriting with examples, use @human-skill instead.
 ---
@@ -28,6 +30,8 @@ description: |
 **尊重读者。** 他们是有能力的开发者。去掉"众所周知""只需""显然"之类居高临下或过度简化的词。
 
 **适配场景。** commit message 不是博客，CLI help 不是 API 文档。每种格式有自己的约束，遵守它们。
+
+**不加分隔线。** Markdown 文章中不要在章节之间插入 `---`（水平分隔线）。标题层级本身已经划分了结构，`---` 是多余的视觉噪音。
 
 ## README
 
@@ -281,8 +285,6 @@ max_backoff = 30
 - 句子长短交替；用代码块、表格、图表打破大段文字
 - 一段一个观点
 
----
-
 ## 去 AI 痕迹检查清单
 
 写完或改完文本后，逐项检查。需要逐条详细示例和深度改写指导时，使用 `@human-skill`。
@@ -308,6 +310,11 @@ max_backoff = 30
 - ✓ 没有机械加粗（粗体只用于真正需要强调的地方）
 - ✓ 没有 emoji 装饰标题
 - ✓ 没有"粗体标题 + 冒号"的内联列表格式
+- ✓ 冒号使用克制。避免"**加粗词**：一段解释"的机械模式，中文写作中冒号意味着"下面是对上面的解释/列举"，频繁使用会让文章读起来像填表。改法举例：
+  - 差："**特点一**：它支持多种格式" → 好："**特点一**，它支持多种格式"（逗号承接）
+  - 差："常用的有以下三种：" → 好："常用的有以下三种。"（句号引出列表）
+  - 差："原因是：内存不足" → 好："原因是内存不足"（直接去掉冒号）
+  - 合理的冒号：正式定义（"SIMT：Single Instruction, Multiple Threads"）、引语、`key: value` 格式
 - ✓ 引号使用中文引号（""），不是英文弯引号
 
 ### 交流层面

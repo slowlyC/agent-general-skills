@@ -45,7 +45,7 @@ get_skill_dir() {
     esac
 }
 
-SKILLS=(writing-skill human-skill plot-skill)
+SKILLS=(writing-skill human-skill plot-skill skill-creator)
 
 install_to_agent() {
     local agent=$1
