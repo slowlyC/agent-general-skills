@@ -24,7 +24,7 @@ while [[ $# -gt 0 ]]; do
             echo "安装到指定工具的 skill 目录:"
             echo "  bash install.sh                   # Cursor (默认，已验证)"
             echo "  bash install.sh --agent claude     # Claude Code (~/.claude/skills/)"
-            echo "  bash install.sh --agent codex      # Codex (~/.agents/skills/)"
+            echo "  bash install.sh --agent codex      # Codex (~/.codex/skills/)"
             echo "  bash install.sh --agent gemini     # Gemini CLI (~/.gemini/skills/)"
             echo ""
             echo "选项:"
@@ -39,8 +39,9 @@ get_skill_dir() {
     case $1 in
         cursor) echo "${HOME}/.cursor/skills" ;;
         claude) echo "${HOME}/.claude/skills" ;;
-        codex)  echo "${HOME}/.agents/skills" ;;
+        codex)  echo "${HOME}/.codex/skills" ;;
         gemini) echo "${HOME}/.gemini/skills" ;;
+        qoder)  echo "${HOME}/.qoder/skills" ;;
         *)      echo "未知工具: $1" >&2; return 1 ;;
     esac
 }
